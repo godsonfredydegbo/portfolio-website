@@ -497,6 +497,11 @@ b.design {
   margin-top: 6rem;
 }
 
+.about_description b,
+.about_item b {
+  font-family: "KdamThmorPro";
+}
+
 .about_description::after {
   content: "";
   width: 20px;
@@ -642,7 +647,7 @@ b.design {
 .projects_button {
   position: absolute;
   right: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .projects_button img {
@@ -710,4 +715,29 @@ b.design {
 
 .projects_card:hover {
   background-color: var(--white-color);
+}
+
+/* ================ CONTACTS ================ */
+
+.contact {
+  padding-bottom: 0;
+}
+
+.contact_container {
+  position: relative;
+  grid-template-rows: 350px max-content max-content;
+  row-gap: 0;
+}
+
+.contact_data {
+  position: relative;
+  width: 250px;
+  height: 270px;
+  background-color: hsla(41, 53%, 55%, 0.3);
+  padding: 1.5rem 1.5rem 1.5rem;
+}
+
+.contact_description-1,
+.contact_description-2 {
+  font-size: var(--small-font-size);
 }
