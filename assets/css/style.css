@@ -735,6 +735,10 @@ b.design {
   height: 270px;
   background-color: hsla(41, 53%, 55%, 0.3);
   padding: 1.5rem 1.5rem 1.5rem;
+  margin-left: auto;
+  border-bottom: 4px solid var(--white-color);
+  z-index: 5;
+  transition: background-color 0.4s;
 }
 
 .contact_description-1,
