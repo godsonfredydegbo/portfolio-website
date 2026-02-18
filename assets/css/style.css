@@ -809,6 +809,11 @@ b.design {
   transition:
     border 0.4s,
     background-color 0.4s;
+  resize: none;
+}
+
+.area_input {
+  padding: 1rem 1rem;
 }
 
 .contact_input::placeholder {
@@ -828,7 +833,7 @@ b.design {
 
 .contact_label {
   position: absolute;
-  top: 8px;
+  top: 15px;
   left: 10px;
   color: var(--text-color-light);
   font-size: var(--small-font-size);
@@ -847,11 +852,6 @@ b.design {
   height: 10rem;
 }
 
-.contact_area {
-  resize: none;
-  padding-top: 1rem;
-}
-
 .contact_button {
   background-color: var(--first-color);
   cursor: pointer;
@@ -859,4 +859,54 @@ b.design {
 
 .contact_input:focus::placeholder {
   opacity: 0;
+}
+
+.contact_input:focus + .contact_label,
+.contact_input:not(:placeholder-shown).contact_input:not(:focus)
+  + .contact_label {
+  opacity: 1;
+  top: -16px;
+}
+
+.contact_social-link img {
+  display: inline-flex;
+}
+
+.contact_social {
+  display: grid;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 10%);
+  padding-block: 1rem 2rem;
+  text-align: center;
+}
+
+.contact_social-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.contact_social-description {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+
+.contact_social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.75rem;
+}
+
+.contact_social-link {
+  background-color: var(--black-color-light);
+  padding: 6px;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s;
+}
+
+.contact_social-link:hover {
+  background-color: var(--first-color);
 }
