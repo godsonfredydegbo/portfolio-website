@@ -1,722 +1,523 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GdnCreative</title>
 
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="assets/icons/window_code_html_programming 1.svg"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GdnCreative</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/window_code_html_programming 1.svg" />
 
-    <link
-      rel="preload"
-      href="assets/fonts/KdamThmorPro-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link
-      rel="preload"
-      href="assets/fonts/Poppins-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/KdamThmorPro-Regular.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link
-      rel="preload"
-      href="assets/fonts/Poppins-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link
-      rel="preload"
-      href="assets/fonts/Poppins-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin />
 
-    <script src="assets/js/script.js" defer></script>
-  </head>
+  <link rel="preload" href="assets/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin />
 
-  <body>
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="gdnlogo">
-          <img
-            src="assets/illustrations/Gdn Creative Logo.svg"
-            alt="Logo de GdnCreative"
-          />
-        </a>
+  <script src="assets/js/script.js" defer></script>
+</head>
 
-        <div class="nav_menu" id="nav-menu">
-          <span class="nav_title">Menu</span>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="gdnlogo">
+        <img src="assets/illustrations/Gdn Creative Logo.svg" alt="Logo de GdnCreative" />
+      </a>
 
-          <h3 class="nav_name">Godson</h3>
+      <div class="nav_menu" id="nav-menu">
+        <span class="nav_title">Menu</span>
 
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a href="#home" class="nav_link">Accueil</a>
-            </li>
+        <h3 class="nav_name">Godson</h3>
 
-            <li class="nav_item">
-              <a href="#about" class="nav_link">A Propos</a>
-            </li>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Accueil</a>
+          </li>
 
-            <li class="nav_item">
-              <a href="#projects" class="nav_link">Projets</a>
-            </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">A Propos</a>
+          </li>
 
-            <li class="nav_item">
-              <a href="#contact" class="nav_link">Contact</a>
-            </li>
-          </ul>
+          <li class="nav_item">
+            <a href="#projects" class="nav_link">Projets</a>
+          </li>
 
-          <div class="nav_close" id="nav-close">
-            <img
-              src="assets/icons/mingcute_close-fill-1.svg"
-              alt="Boutton Fermer"
-            />
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav_close" id="nav-close">
+          <img src="assets/icons/mingcute_close-fill-1.svg" alt="Boutton Fermer" />
+        </div>
+      </div>
+
+      <div>
+        <div class="nav_buttons">
+          <div class="nav_toggle" id="nav-toggle">
+            <img src="assets/icons/ic_sharp-menu-1.svg" alt="Button Menu" />
           </div>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <div>
-          <div class="nav_buttons">
-            <div class="nav_toggle" id="nav-toggle">
-              <img src="assets/icons/ic_sharp-menu-1.svg" alt="Button Menu" />
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <h1 class="home_name">Degbo Godson</h1>
+
+        <div class="home_perfil">
+          <div class="image_shadow">
+            <div class="home_image">
+              <img src="assets/images/Frame 1.webp" alt="Auteur de Gdn" class="home_image" />
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <main class="main">
-      <section class="home section" id="home">
-        <div class="home_container container grid">
-          <h1 class="home_name">Degbo Godson</h1>
+            <div class="home_social">
+              <a href="https://github.com/godsonfredydegbo" target="_blank" class="home_social-link"
+                rel="noopener noreferrer">
+                <img src="assets/icons/line-md_github.svg" alt="Bouton Github" />
+              </a>
 
-          <div class="home_perfil">
-            <div class="image_shadow">
-              <div class="home_image">
-                <img
-                  src="assets/images/Frame 1.webp"
-                  alt="Auteur de Gdn"
-                  class="home_image"
-                />
-              </div>
-
-              <div class="home_social">
-                <a
-                  href="https://github.com/godsonfredydegbo"
-                  target="_blank"
-                  class="home_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/line-md_github.svg"
-                    alt="Bouton Github"
-                  />
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/
+              <a href="https://www.linkedin.com/in/
                           godson-fredy-degbo-94b3853a7?utm_source=share_via&utm
-                          _content=profile&utm_medium=member_ios"
-                  target="_blank"
-                  class="home_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/typcn_social-linkedin.svg"
-                    alt="Bouton LinkedIn"
-                  />
-                </a>
+                          _content=profile&utm_medium=member_ios" target="_blank" class="home_social-link"
+                rel="noopener noreferrer">
+                <img src="assets/icons/typcn_social-linkedin.svg" alt="Bouton LinkedIn" />
+              </a>
 
-                <a
-                  href="https://wa.me/message/3VJ2VGDHF54RE1"
-                  target="_blank"
-                  class="home_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/iconoir_whatsapp.svg"
-                    alt="Bouton Whatsapp"
-                  />
-                </a>
+              <a href="https://wa.me/message/3VJ2VGDHF54RE1" target="_blank" class="home_social-link"
+                rel="noopener noreferrer">
+                <img src="assets/icons/iconoir_whatsapp.svg" alt="Bouton Whatsapp" />
+              </a>
 
-                <a
-                  href="https://www.instagram.com/gdncreative?
-                          igsh=YXB4aWQ1amwxMzE3&utm_source=qr"
-                  target="_blank"
-                  class="home_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/line-md_instagram.svg"
-                    alt="Bouton Instagram"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="home_info">
-              <p class="home_description">
-                <b>Developpeur Front-end Javascript</b>, avec une double
-                expertise en <b class="code">code</b> et en
-                <b class="design">design</b>. Je conçois des projets performants
-                soignés et à fort impact visuel.
-              </p>
-
-              <a href="#about" class="home_scroll">
-                <div class="home_scroll-box">
-                  <img
-                    src="assets/icons/line-md_chevron-up.svg"
-                    alt="Bouton Voir Plus"
-                  />
-                </div>
-
-                <span class="home_scroll-text">Voir Plus</span>
+              <a href="https://www.instagram.com/gdncreative?
+                          igsh=YXB4aWQ1amwxMzE3&utm_source=qr" target="_blank" class="home_social-link"
+                rel="noopener noreferrer">
+                <img src="assets/icons/line-md_instagram.svg" alt="Bouton Instagram" />
               </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="about_section section" id="about">
-        <div class="about_container container grid">
-          <h2 class="section_title-1">A propos.</h2>
-
-          <div class="about_perfil">
-            <div class="image_background">
-              <div class="about_image">
-                <img
-                  src="assets/images/Gdnauthor.webp"
-                  alt="Auteur de GdnCreative"
-                  class="about_img"
-                />
-
-                <div class="about_shadow"></div>
-
-                <img
-                  src="assets/icons/fleche illustratrice 2.svg"
-                  alt=""
-                  class="about_line"
-                />
-                <div class="about_box"></div>
-              </div>
-            </div>
-
-            <div class="about_info">
-              <p class="about_description">
-                Animé par une forte passion pour le <b>Design Web</b> et
-                l'optimisation
-                <b>UI/UX</b>
-                J'ai développé au fil des années une expertise solide, reconnue
-                par la satisfaction constante de mes clients et la haute qualité
-                des projets que je livre.
-              </p>
-
-              <ul class="about_list">
-                <li class="about_item">
-                  <b>Mes compétences:</b> HTML, CSS, JavaScript, Git & Github,
-                  Figma, Pack Adobe (Illustrator, Photoshop)
-                </li>
-              </ul>
-
-              <div class="about_buttons">
-                <a href="#contact" class="button">
-                  <img
-                    src="assets/icons/iconoir_maps-arrow-diagonal-1.svg"
-                    alt="Me Contacter"
-                  />Me Contacter
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/
-                          godson-fredy-degbo-94b3853a7?utm_source=share_via&utm
-                          _content=profile&utm_medium=member_ios"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="button_ghost"
-                >
-                  <img
-                    src="assets/icons/typcn_social-linkedin-1.svg"
-                    alt="LinkedIn"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="services section">
-        <h2 class="section_title-2">
-          <span>Services</span>
-        </h2>
-
-        <div class="services_container container grid">
-          <article class="services_card">
-            <div class="services_border"></div>
-
-            <div class="services_content">
-              <div class="services_icon">
-                <div class="services_box"></div>
-
-                <img
-                  src="assets/icons/icons8-web-design-50 1.svg"
-                  alt="Web Design"
-                />
-              </div>
-              <h2 class="services_title">Web Design</h2>
-
-              <p class="services_description">
-                Des designs élégants et raffinés, associés à des interfaces
-                intutives et performantes, conçus pour offrir une expérience
-                utiisateur fluide et agréable.
-              </p>
-            </div>
-          </article>
-
-          <article class="services_card">
-            <div class="services_border"></div>
-
-            <div class="services_content">
-              <div class="services_icon">
-                <div class="services_box"></div>
-
-                <img
-                  src="assets/icons/window_code_html_programming 1.svg"
-                  alt="Development"
-                />
-              </div>
-
-              <h2 class="services_title">Development</h2>
-
-              <p class="services_description">
-                Développement web sur mesure adapté à vos besoins et conçu pour
-                offrir une expérience utilisateur parfaite.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="projects section" id="projects">
-        <h2 class="section_title-1">
-          <span>Projets</span>
-        </h2>
-
-        <div class="projects_container container grid">
-          <article class="projects_card">
-            <div class="projects_image">
-              <img src="" alt="Restaurant Website" />
-
-              <a href="#" class="projects_button button">
-                <img src="assets/icons/line-md_arrow-up.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="projects_content">
-              <h3 class="projects_subtitle">Website</h3>
-              <h2 class="projects_title">Restaurant Website</h2>
-
-              <p class="projects_description">
-                Projet réalisé autour de la conception et de la structure de la
-                mise en page, en respectant le design souhaité par le client.
-              </p>
-            </div>
-
-            <div class="projects_buttons">
-              <a
-                href="https://github.com/godsonfredydegbo"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Github" />
-                Voir Plus
-              </a>
-
-              <a
-                href="https://dribble.com/gdncreative-contact"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
-                Voir Plus
-              </a>
-            </div>
-          </article>
-
-          <article class="projects_card">
-            <div class="projects_image">
-              <img src="" alt="Restaurant Website" />
-
-              <a href="#" class="projects_button button">
-                <img src="assets/icons/line-md_arrow-up.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="projects_content">
-              <h3 class="projects_subtitle">Website</h3>
-              <h2 class="projects_title">Medical Website</h2>
-
-              <p class="projects_description">
-                Projet réalisé autour de la conception et de la structure de la
-                mise en page, en respectant le design souhaité par le client.
-              </p>
-            </div>
-
-            <div class="projects_buttons">
-              <a
-                href="https://github.com/godsonfredydegbo"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="assets/icons/line-md_github-1.svg"
-                  alt="Github"
-                  class="image_link"
-                />
-                Voir Plus
-              </a>
-
-              <a
-                href="https://dribble.com/gdncreative-contact"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="assets/icons/line-md_github-1.svg"
-                  alt="Dribble"
-                  class="image_link"
-                />
-                Voir Plus
-              </a>
-            </div>
-          </article>
-
-          <article class="projects_card">
-            <div class="projects_image">
-              <img src="" alt="Restaurant Website" />
-
-              <a href="#" class="projects_button button">
-                <img src="assets/icons/line-md_arrow-up.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="projects_content">
-              <h3 class="projects_subtitle">Website</h3>
-              <h2 class="projects_title">iSphere Website</h2>
-
-              <p class="projects_description">
-                Projet réalisé autour de la conception et de la structure de la
-                mise en page, en respectant le design souhaité par le client.
-              </p>
-            </div>
-
-            <div class="projects_buttons">
-              <a
-                href="https://github.com/godsonfredydegbo"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Github" />
-                Voir Plus
-              </a>
-
-              <a
-                href="https://dribble.com/gdncreative-contact"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
-                Voir Plus
-              </a>
-            </div>
-          </article>
-
-          <article class="projects_card">
-            <div class="projects_image">
-              <img src="" alt="Restaurant Website" />
-
-              <a href="#" class="projects_button button">
-                <img src="assets/icons/line-md_arrow-up.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="projects_content">
-              <h3 class="projects_subtitle">Website</h3>
-              <h2 class="projects_title">Car Website</h2>
-
-              <p class="projects_description">
-                Projet réalisé autour de la conception et de la structure de la
-                mise en page, en respectant le design souhaité par le client.
-              </p>
-            </div>
-
-            <div class="projects_buttons">
-              <a
-                href="https://github.com/godsonfredydegbo"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Github" />
-                Voir Plus
-              </a>
-
-              <a
-                href="https://dribble.com/gdncreative-contact"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
-                Voir Plus
-              </a>
-            </div>
-          </article>
-
-          <article class="projects_card">
-            <div class="projects_image">
-              <img src="" alt="Restaurant Website" />
-
-              <a href="#" class="projects_button button">
-                <img src="assets/icons/line-md_arrow-up.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="projects_content">
-              <h3 class="projects_subtitle">Website</h3>
-              <h2 class="projects_title">Luxury Mode Website</h2>
-
-              <p class="projects_description">
-                Projet réalisé autour de la conception et de la structure de la
-                mise en page, en respectant le design souhaité par le client.
-              </p>
-            </div>
-
-            <div class="projects_buttons">
-              <a
-                href="https://github.com/godsonfredydegbo"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Github" />
-                Voir Plus
-              </a>
-
-              <a
-                href="https://dribble.com/gdncreative-contact"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
-                Voir Plus
-              </a>
-            </div>
-          </article>
-
-          <article class="projects_card">
-            <div class="projects_image">
-              <img src="" alt="Restaurant Website" />
-
-              <a href="#" class="projects_button button">
-                <img src="assets/icons/line-md_arrow-up.svg" alt="" />
-              </a>
-            </div>
-
-            <div class="projects_content">
-              <h3 class="projects_subtitle">Website</h3>
-              <h2 class="projects_title">Motor Website</h2>
-
-              <p class="projects_description">
-                Projet réalisé autour de la conception et de la structure de la
-                mise en page, en respectant le design souhaité par le client.
-              </p>
-            </div>
-
-            <div class="projects_buttons">
-              <a
-                href="https://github.com/godsonfredydegbo"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Github" />
-                Voir Plus
-              </a>
-
-              <a
-                href="https://dribble.com/gdncreative-contact"
-                target="_blank"
-                class="projects_link"
-                rel="noopener noreferrer"
-              >
-                <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
-                Voir Plus
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact section" id="contact">
-        <div class="contact_container grid">
-          <div class="contact_data">
-            <h2 class="section_title-2">
-              <span>Me Contacter</span>
-            </h2>
-
-            <p class="contact_description-1">
-              Je lis chaque message. N'hésitez pas à m'écrire, je vous répondrai
-              dans les plus brefs délais.
+          <div class="home_info">
+            <p class="home_description">
+              <b>Developpeur Front-end Javascript</b>, avec une double
+              expertise en <b class="code">code</b> et en
+              <b class="design">design</b>. Je conçois des projets performants
+              soignés et à fort impact visuel.
             </p>
 
-            <p class="contact_description-2">
-              J'ai uniquement besoin de votre <b>Nom</b>, votre <b>Prénom</b> et
-              votre <b>Adresse Mail</b>; vous ne recevrez rien d'autre que ma
-              réponse.
+            <a href="#about" class="home_scroll">
+              <div class="home_scroll-box">
+                <img src="assets/icons/line-md_chevron-up.svg" alt="Bouton Voir Plus" />
+              </div>
+
+              <span class="home_scroll-text">Voir Plus</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_section section" id="about">
+      <div class="about_container container grid">
+        <h2 class="section_title-1">A propos.</h2>
+
+        <div class="about_perfil">
+          <div class="image_background">
+            <div class="about_image">
+              <img src="assets/images/Gdnauthor.webp" alt="Auteur de GdnCreative" class="about_img" />
+
+              <div class="about_shadow"></div>
+
+              <img src="assets/icons/fleche illustratrice 2.svg" alt="" class="about_line" />
+              <div class="about_box"></div>
+            </div>
+          </div>
+
+          <div class="about_info">
+            <p class="about_description">
+              Animé par une forte passion pour le <b>Design Web</b> et
+              l'optimisation
+              <b>UI/UX</b>
+              J'ai développé au fil des années une expertise solide, reconnue
+              par la satisfaction constante de mes clients et la haute qualité
+              des projets que je livre.
+            </p>
+
+            <ul class="about_list">
+              <li class="about_item">
+                <b>Mes compétences:</b> HTML, CSS, JavaScript, Git & Github,
+                Figma, Pack Adobe (Illustrator, Photoshop)
+              </li>
+            </ul>
+
+            <div class="about_buttons">
+              <a href="#contact" class="button">
+                <img src="assets/icons/iconoir_maps-arrow-diagonal-1.svg" alt="Me Contacter" />Me Contacter
+              </a>
+
+              <a href="https://www.linkedin.com/in/
+                          godson-fredy-degbo-94b3853a7?utm_source=share_via&utm
+                          _content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer"
+                class="button_ghost">
+                <img src="assets/icons/typcn_social-linkedin-1.svg" alt="LinkedIn" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section">
+      <h2 class="section_title-2">
+        <span>Services</span>
+      </h2>
+
+      <div class="services_container container grid">
+        <article class="services_card">
+          <div class="services_border"></div>
+
+          <div class="services_content">
+            <div class="services_icon">
+              <div class="services_box"></div>
+
+              <img src="assets/icons/icons8-web-design-50 1.svg" alt="Web Design" />
+            </div>
+            <h2 class="services_title">Web Design</h2>
+
+            <p class="services_description">
+              Des designs élégants et raffinés, associés à des interfaces
+              intutives et performantes, conçus pour offrir une expérience
+              utiisateur fluide et agréable.
+            </p>
+          </div>
+        </article>
+
+        <article class="services_card">
+          <div class="services_border"></div>
+
+          <div class="services_content">
+            <div class="services_icon">
+              <div class="services_box"></div>
+
+              <img src="assets/icons/window_code_html_programming 1.svg" alt="Development" />
+            </div>
+
+            <h2 class="services_title">Development</h2>
+
+            <p class="services_description">
+              Développement web sur mesure adapté à vos besoins et conçu pour
+              offrir une expérience utilisateur parfaite.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <h2 class="section_title-1">
+        <span>Projets</span>
+      </h2>
+
+      <div class="projects_container container grid">
+        <article class="projects_card">
+          <div class="projects_image">
+            <img src="" alt="Restaurant Website" />
+
+            <a href="#" class="projects_button button">
+              <img src="assets/icons/line-md_arrow-up.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="projects_content">
+            <h3 class="projects_subtitle">Website</h3>
+            <h2 class="projects_title">Restaurant Website</h2>
+
+            <p class="projects_description">
+              Projet réalisé autour de la conception et de la structure de la
+              mise en page, en respectant le design souhaité par le client.
             </p>
           </div>
 
-          <div class="contact_mail">
-            <h2 class="contact_title">Envoyez moi un message</h2>
+          <div class="projects_buttons">
+            <a href="https://github.com/godsonfredydegbo" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Github" />
+              Voir Plus
+            </a>
 
-            <form action="" class="contact_form" id="contact-form">
-              <div class="contact_group">
-                <div class="contact_box">
-                  <input
-                    type="text"
-                    name="user_name"
-                    class="contact_input"
-                    id="name"
-                    required
-                    placeholder="Nom et Prenom"
-                  />
+            <a href="https://dribble.com/gdncreative-contact" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
+              Voir Plus
+            </a>
+          </div>
+        </article>
 
-                  <label for="name" class="contact_label">Nom et Prenom</label>
-                </div>
+        <article class="projects_card">
+          <div class="projects_image">
+            <img src="" alt="Restaurant Website" />
 
-                <div class="contact_box">
-                  <input
-                    type="email"
-                    name="user_email"
-                    class="contact_input"
-                    id="email"
-                    required
-                    placeholder="Email"
-                  />
-
-                  <label for="email" class="contact_label">Adresse Email</label>
-                </div>
-
-                <div class="contact_box">
-                  <input
-                    type="text"
-                    name="user_subject"
-                    class="contact_input"
-                    id="subject"
-                    required
-                    placeholder="Sujet"
-                  />
-
-                  <label for="subject" class="contact_label">Sujet</label>
-                </div>
-
-                <div class="contact_box contact_area">
-                  <textarea
-                    name="user_message"
-                    id="message"
-                    class="contact_input"
-                    required
-                    placeholder="Message"
-                  >
-                    Message
-                  </textarea>
-
-                  <label for="message" class="contact_label">Message</label>
-                </div>
-              </div>
-
-              <button type="submit" class="contact_button button">
-                <img
-                  src="assets/icons/iconoir_maps-arrow-diagonal-1.svg"
-                  alt="Envoyer"
-                />
-                Envoyer
-              </button>
-            </form>
+            <a href="#" class="projects_button button">
+              <img src="assets/icons/line-md_arrow-up.svg" alt="" />
+            </a>
           </div>
 
-          <div class="contact_social">
-            <div class="contact_social-data">
-              <div>
-                <p class="contact_social-description-1">
-                  Contact via réseaux sociaux uniquement
-                </p>
+          <div class="projects_content">
+            <h3 class="projects_subtitle">Website</h3>
+            <h2 class="projects_title">Medical Website</h2>
+
+            <p class="projects_description">
+              Projet réalisé autour de la conception et de la structure de la
+              mise en page, en respectant le design souhaité par le client.
+            </p>
+          </div>
+
+          <div class="projects_buttons">
+            <a href="https://github.com/godsonfredydegbo" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Github" class="image_link" />
+              Voir Plus
+            </a>
+
+            <a href="https://dribble.com/gdncreative-contact" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Dribble" class="image_link" />
+              Voir Plus
+            </a>
+          </div>
+        </article>
+
+        <article class="projects_card">
+          <div class="projects_image">
+            <img src="" alt="Restaurant Website" />
+
+            <a href="#" class="projects_button button">
+              <img src="assets/icons/line-md_arrow-up.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="projects_content">
+            <h3 class="projects_subtitle">Website</h3>
+            <h2 class="projects_title">iSphere Website</h2>
+
+            <p class="projects_description">
+              Projet réalisé autour de la conception et de la structure de la
+              mise en page, en respectant le design souhaité par le client.
+            </p>
+          </div>
+
+          <div class="projects_buttons">
+            <a href="https://github.com/godsonfredydegbo" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Github" />
+              Voir Plus
+            </a>
+
+            <a href="https://dribble.com/gdncreative-contact" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
+              Voir Plus
+            </a>
+          </div>
+        </article>
+
+        <article class="projects_card">
+          <div class="projects_image">
+            <img src="" alt="Restaurant Website" />
+
+            <a href="#" class="projects_button button">
+              <img src="assets/icons/line-md_arrow-up.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="projects_content">
+            <h3 class="projects_subtitle">Website</h3>
+            <h2 class="projects_title">Car Website</h2>
+
+            <p class="projects_description">
+              Projet réalisé autour de la conception et de la structure de la
+              mise en page, en respectant le design souhaité par le client.
+            </p>
+          </div>
+
+          <div class="projects_buttons">
+            <a href="https://github.com/godsonfredydegbo" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Github" />
+              Voir Plus
+            </a>
+
+            <a href="https://dribble.com/gdncreative-contact" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
+              Voir Plus
+            </a>
+          </div>
+        </article>
+
+        <article class="projects_card">
+          <div class="projects_image">
+            <img src="" alt="Restaurant Website" />
+
+            <a href="#" class="projects_button button">
+              <img src="assets/icons/line-md_arrow-up.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="projects_content">
+            <h3 class="projects_subtitle">Website</h3>
+            <h2 class="projects_title">Luxury Mode Website</h2>
+
+            <p class="projects_description">
+              Projet réalisé autour de la conception et de la structure de la
+              mise en page, en respectant le design souhaité par le client.
+            </p>
+          </div>
+
+          <div class="projects_buttons">
+            <a href="https://github.com/godsonfredydegbo" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Github" />
+              Voir Plus
+            </a>
+
+            <a href="https://dribble.com/gdncreative-contact" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
+              Voir Plus
+            </a>
+          </div>
+        </article>
+
+        <article class="projects_card">
+          <div class="projects_image">
+            <img src="" alt="Restaurant Website" />
+
+            <a href="#" class="projects_button button">
+              <img src="assets/icons/line-md_arrow-up.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="projects_content">
+            <h3 class="projects_subtitle">Website</h3>
+            <h2 class="projects_title">Motor Website</h2>
+
+            <p class="projects_description">
+              Projet réalisé autour de la conception et de la structure de la
+              mise en page, en respectant le design souhaité par le client.
+            </p>
+          </div>
+
+          <div class="projects_buttons">
+            <a href="https://github.com/godsonfredydegbo" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Github" />
+              Voir Plus
+            </a>
+
+            <a href="https://dribble.com/gdncreative-contact" target="_blank" class="projects_link"
+              rel="noopener noreferrer">
+              <img src="assets/icons/line-md_github-1.svg" alt="Dribble" />
+              Voir Plus
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact_container grid">
+        <div class="contact_data">
+          <h2 class="section_title-2">
+            <span>Me Contacter</span>
+          </h2>
+
+          <p class="contact_description-1">
+            Je lis chaque message. N'hésitez pas à m'écrire, je vous répondrai
+            dans les plus brefs délais.
+          </p>
+
+          <p class="contact_description-2">
+            J'ai uniquement besoin de votre <b>Nom</b>, votre <b>Prénom</b> et
+            votre <b>Adresse Mail</b>; vous ne recevrez rien d'autre que ma
+            réponse.
+          </p>
+        </div>
+
+        <div class="contact_mail">
+          <h2 class="contact_title">Envoyez moi un message</h2>
+
+          <form action="" class="contact_form" id="contact-form">
+            <div class="contact_group">
+              <div class="contact_box">
+                <input type="text" name="user_name" class="contact_input" id="name" required
+                  placeholder="Nom et Prenom" />
+
+                <label for="name" class="contact_label">Nom et Prenom</label>
               </div>
 
-              <div class="contact_social-links">
-                <a
-                  href="https://www.instagram.com/gdncreative?
-                          igsh=YXB4aWQ1amwxMzE3&utm_source=qr"
-                  target="_blank"
-                  class="contact_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/line-md_instagram.svg"
-                    alt="Bouton Instagram"
-                  />
-                </a>
+              <div class="contact_box">
+                <input type="email" name="user_email" class="contact_input" id="email" required placeholder="Email" />
 
-                <a
-                  href=""
-                  target="_blank"
-                  class="contact_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/line-md_instagram.svg"
-                    alt="Bouton Instagram"
-                  />
-                </a>
-
-                <a
-                  href=""
-                  target="_blank"
-                  class="contact_social-link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/icons/line-md_instagram.svg"
-                    alt="Bouton Instagram"
-                  />
-                </a>
+                <label for="email" class="contact_label">Adresse Email</label>
               </div>
+
+              <div class="contact_box">
+                <input type="text" name="user_subject" class="contact_input" id="subject" required
+                  placeholder="Sujet" />
+
+                <label for="subject" class="contact_label">Sujet</label>
+              </div>
+
+              <div class="contact_box contact_area">
+                <textarea name="user_message" id="message" class="contact_input" required
+                  placeholder="Message"></textarea>
+
+                <label for="message" class="contact_label">Message</label>
+              </div>
+            </div>
+
+            <button type="submit" class="contact_button button">
+              <img src="assets/icons/iconoir_maps-arrow-diagonal-1.svg" alt="Envoyer" />
+              Envoyer
+            </button>
+          </form>
+        </div>
+
+        <div class="contact_social">
+          <div class="contact_social-data">
+            <div>
+              <p class="contact_social-description-1">
+                Contact via réseaux sociaux uniquement
+              </p>
+            </div>
+
+            <div class="contact_social-links">
+              <a href="https://www.instagram.com/gdncreative?
+                          igsh=YXB4aWQ1amwxMzE3&utm_source=qr" target="_blank" class="contact_social-link"
+                rel="noopener noreferrer">
+                <img src="assets/icons/line-md_instagram.svg" alt="Bouton Instagram" />
+              </a>
+
+              <a href="" target="_blank" class="contact_social-link" rel="noopener noreferrer">
+                <img src="assets/icons/line-md_instagram.svg" alt="Bouton Instagram" />
+              </a>
+
+              <a href="" target="_blank" class="contact_social-link" rel="noopener noreferrer">
+                <img src="assets/icons/line-md_instagram.svg" alt="Bouton Instagram" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
