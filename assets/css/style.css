@@ -29,7 +29,7 @@
 :root {
   --header-height: 3.5rem;
 
-  --first-color: hsl(41, 53%, 55%);
+  --first-color: hsl(184, 100%, 26%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -54,6 +54,19 @@
 
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+body.dark-theme {
+  --header-height: 3.5rem;
+
+  --first-color: hsl(41, 53%, 55%);
+  --black-color: hsl(0, 0%, 18%);
+  --black-color-light: hsl(0, 0%, 30%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 70%);
+  --text-color-light: hsl(0, 0%, 64%);
+  --body-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 12%);
 }
 @media screen and (min-width: 1150px) {
   :root {
@@ -100,6 +113,27 @@ img {
   height: auto;
 }
 
+/* ================ DARK THEME ================ */
+
+.dark-theme .shadow-header {
+  box-shadow: 0 1px 12px hsla(0, 0%, 0%, 0.6);
+}
+
+.dark-theme .home_image::after {
+  border-bottom: 6px solid var(--white-color);
+  border-right: 6px solid var(--white-color);
+}
+.dark-theme .home_image::before {
+  border-top: 6px solid var(--white-color);
+  border-left: 6px solid var(--white-color);
+}
+.dark-theme :is(.about_box, .about_line) {
+  filter: invert(1);
+}
+.dark-theme .about_shadow {
+  border-bottom: 4px solid var(--white-color);
+}
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -129,7 +163,7 @@ img {
   content: "";
   width: 40px;
   height: 28px;
-  background-color: hsla(41, 53%, 55%, 0.3);
+  background-color: hsla(184, 100%, 26%, 0.3);
   position: absolute;
   top: -4px;
   right: -8px;
@@ -388,7 +422,7 @@ img {
   font-family: "KdamThmorPro";
   background: linear-gradient(
     90deg,
-    hsla(41, 53%, 55%, 0.4),
+    hsla(184, 100%, 26%, 0.4),
     hsla(41, 53%, 55%, 0)
   );
 }
@@ -504,7 +538,7 @@ b.design {
 }
 
 .about_info {
-  max-width: 200px;
+  max-width: 250px;
   padding-left: 1.25rem;
   display: grid;
   row-gap: 2rem;
@@ -560,6 +594,11 @@ b.design {
   transition: background-color 0.4s;
 }
 
+.button img {
+  width: 20px;
+  height: auto;
+}
+
 .button:hover {
   background-color: var(--first-color);
 }
@@ -570,6 +609,10 @@ b.design {
   transition:
     border 0.4s,
     color 0.4s;
+}
+
+.button_ghost img {
+  width: 25px;
 }
 
 .button_ghost:hover {
@@ -632,7 +675,7 @@ b.design {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: var(--first-color);
+  background-color: hsla(184, 100%, 26%, 0.4);
   right: -12px;
   top: -10px;
 }
@@ -662,6 +705,7 @@ b.design {
 }
 
 .projects_card {
+  justify-self: center;
   padding: 1rem 1rem 2rem;
   transition: background-color 0.4s;
 }
@@ -674,6 +718,7 @@ b.design {
 .projects_button {
   position: absolute;
   right: 1rem;
+  bottom: -1rem;
   padding: 0.5rem;
 }
 
@@ -761,7 +806,7 @@ b.design {
   position: relative;
   width: 250px;
   height: 300px;
-  background-color: hsla(41, 53%, 55%, 0.3);
+  background-color: hsla(184, 100%, 26%, 0.3);
   padding: 1.5rem 1.5rem 1.5rem;
   margin-left: auto;
   border-bottom: 4px solid var(--white-color);
@@ -807,6 +852,7 @@ b.design {
 .contact_group {
   display: grid;
   row-gap: 1.25rem;
+  justify-self: center;
 }
 
 .contact_form {
