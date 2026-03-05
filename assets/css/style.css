@@ -59,7 +59,7 @@
 body.dark-theme {
   --header-height: 3.5rem;
 
-  --first-color: hsl(184, 100%, 50%);
+  --first-color: hsl(184, 100%, 26%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -93,6 +93,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color 0.4s; /*Mainly for the dark-mode*/
 }
 h1,
 h2,
@@ -142,6 +143,27 @@ img {
     hsla(184, 100%, 50%, 0.4),
     hsla(184, 100%, 50%, 0)
   );
+}
+.dark-theme :is(.button_ghost img, .services_icon img) {
+  filter: invert(1);
+}
+.dark-theme .projects_card:hover {
+  background-color: var(--body-color);
+}
+.dark-theme :is(.contact_mail, .contact_input, .contact_label) {
+  background-color: var(--container-color);
+}
+.dark-theme .footer {
+  background-color: hsl(0, 0%, 4%);
+}
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(0, 0%, 20%);
+}
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 30%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 40%);
 }
 
 .container {
@@ -195,7 +217,9 @@ img {
   top: 0;
   left: 0;
   background-color: var(--body-color);
-  transition: box-shadow 0.4s;
+  transition:
+    box-shadow 0.4s,
+    background-color 0.4s;
   z-index: var(--z-fixed);
 }
 
@@ -934,6 +958,7 @@ img {
 }
 
 .contact_button {
+  justify-self: center;
   width: 250px;
   background-color: var(--first-color);
   cursor: pointer;
@@ -969,7 +994,8 @@ img {
 }
 
 .contact_social-description {
-  max-width: 250px;
+  display: inline-flex;
+  width: 250px;
   color: var(--white-color);
   font-weight: var(--font-medium);
   justify-self: center;
@@ -989,6 +1015,10 @@ img {
   display: grid;
   place-items: center;
   transition: background-color 0.3s;
+}
+.contact_social-link img {
+  width: 30px;
+  height: auto;
 }
 
 .contact_social-link:hover {

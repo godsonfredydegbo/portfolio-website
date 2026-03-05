@@ -96,12 +96,25 @@ const darkTheme = 'dark-theme'
 const moonIcon = 'assets/icons/tabler_moon.svg'
 const sunIcon = 'assets/icons/mi_sun-1.svg'
 
+const logo = document.querySelector('.gdnlogo')
+const lightLogo = 'assets/icons/GDn Logo Complet.svg'
+const darkLogo = 'assets/icons/GDn Logo Complet alt.svg'
+
 // Function that displays the correct image according to the theme
 function updateIcon() {
     if (document.body.classList.contains(darkTheme)) {
         themeButton.src = sunIcon
     }else {
         themeButton.src = moonIcon
+    }
+}
+
+// Function that displays the correct logo to the theme
+function updateLogo() {
+    if (document.body.classList.contains(darkTheme)) {
+        logo.src = darkLogo
+    } else {
+        logo.src = lightLogo
     }
 }
 
@@ -113,8 +126,9 @@ if (savedTheme === 'dark') {
 }
 
 updateIcon()
+updateLogo()
 
-//On clic
+//On click
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
 
@@ -124,4 +138,5 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', currentTheme)
 
     updateIcon()
+    updateLogo()
 })
