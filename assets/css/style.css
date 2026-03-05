@@ -59,7 +59,7 @@
 body.dark-theme {
   --header-height: 3.5rem;
 
-  --first-color: hsl(41, 53%, 55%);
+  --first-color: hsl(184, 100%, 50%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -115,6 +115,9 @@ img {
 
 /* ================ DARK THEME ================ */
 
+.dark-theme .gdnlogo {
+  src: url("../icons/GDn Logo Complet alt.svg");
+}
 .dark-theme .shadow-header {
   box-shadow: 0 1px 12px hsla(0, 0%, 0%, 0.6);
 }
@@ -132,6 +135,13 @@ img {
 }
 .dark-theme .about_shadow {
   border-bottom: 4px solid var(--white-color);
+}
+.dark-theme .home_description .dev {
+  background: linear-gradient(
+    90deg,
+    hsla(184, 100%, 50%, 0.4),
+    hsla(184, 100%, 50%, 0)
+  );
 }
 
 .container {
@@ -381,7 +391,7 @@ img {
 }
 
 .home_social {
-  height: max-content;
+  height: auto;
   position: absolute;
   bottom: 0;
   left: -52px;
@@ -418,18 +428,13 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.home_description b {
+.home_description .dev {
   font-family: "KdamThmorPro";
   background: linear-gradient(
     90deg,
     hsla(184, 100%, 26%, 0.4),
     hsla(41, 53%, 55%, 0)
   );
-}
-
-b.code,
-b.design {
-  background: none;
 }
 
 .home_scroll {
