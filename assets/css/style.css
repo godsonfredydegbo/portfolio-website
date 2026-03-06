@@ -446,6 +446,7 @@ img {
 }
 
 .home_description {
+  margin: auto;
   max-width: 300px;
   text-align: center;
   color: var(--title-color);
@@ -1126,6 +1127,9 @@ img {
 
   .home_image {
     width: 180px;
+  }
+  .home_description {
+    justify-self: center;
   }
 
   .about_img {
