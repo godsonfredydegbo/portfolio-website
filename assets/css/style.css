@@ -809,16 +809,17 @@ img {
 .projects_link img {
   width: 12px;
   height: 12px;
-  filter: grayscale(1) opacity(0.7);
-  transition: all 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(60%);
+  transition: filter 0.3s ease;
 }
 
 .projects_link:hover {
-  color: #007bff;
+  color: #007b83;
 }
 
 .projects_link:hover img {
-  filter: grayscale(0) opacity(1);
+  filter: invert(31%) sepia(91%) saturate(1370%) hue-rotate(145deg)
+    brightness(95%) contrast(101%);
 }
 
 .projects_link:hover {
@@ -1417,6 +1418,13 @@ img {
     top: -4rem;
     right: -5.5rem;
     border-bottom: 10px solid var(--black-color);
+  }
+  .dark-theme .about_shadow {
+    width: 240px;
+    height: 615px;
+    top: -4rem;
+    right: -5.5rem;
+    border-bottom: 10px solid var(--white-color);
   }
   .about_line {
     width: 200px;
